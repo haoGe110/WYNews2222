@@ -21,7 +21,7 @@
     _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor = [UIColor whiteColor];
     
-    Class  cls = NSClassFromString(@"WYMainViewController");
+    Class  cls = NSClassFromString(@"WYListViewController");
     UIViewController * vc = [cls new];
     
     _window.rootViewController = vc;

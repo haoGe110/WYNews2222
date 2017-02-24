@@ -23,7 +23,7 @@
 - (void)addChildViewControllers
 {
     NSArray * array = @[
-                       @{@"clsName":@"UIViewController",@"title":@"首页",@"imageName":@"news"},
+                       @{@"clsName":@"WYHomeViewController",@"title":@"首页",@"imageName":@"news"},
                        @{@"clsName": @"UIViewController", @"title": @"阅读", @"imageName": @"reader"},
                        @{@"clsName": @"UIViewController", @"title": @"视频", @"imageName": @"media"},
                        @{@"clsName": @"UIViewController", @"title": @"话题", @"imageName": @"bar"},
