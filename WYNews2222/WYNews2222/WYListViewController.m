@@ -8,9 +8,10 @@
 
 #import "WYListViewController.h"
 #import "WYNewslistLTEM.h"
+#import "WYNewsTableCell.h"
 
-NSString * cellId = @"cellId";
-
+NSString * NormalCellId = @"NormalCell";
+NSString * ExtraImagesCellId = @"ExtraImagesCellId";
 
 @interface WYListViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -60,7 +61,8 @@ NSString * cellId = @"cellId";
     }];
     
     // 3. 注册cellId
-    [tv registerClass:[UITableViewCell class] forCellReuseIdentifier:cellId];
+   // [tv registerNib:[UINib nibWithNibName:@"WYNewsNormalCell" bundle:nil] forCellReuseIdentifier:NormalCellId];
+    [tv registerNib:[UINib nibWithNibName:@"WYNewsExtraImagesCell" bundle:nil] forCellReuseIdentifier:ExtraImagesCellId];
     
     // 4. 设置代理和数据源
     tv.delegate = self;
@@ -74,12 +76,12 @@ NSString * cellId = @"cellId";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 20;
+    return _mutableData.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:ExtraImagesCellId forIndexPath:indexPath];
     
     cell.textLabel.text = _mutableData[indexPath.row].title;
     return cell;
