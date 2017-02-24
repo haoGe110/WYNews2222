@@ -13,7 +13,11 @@ NSString * cellId = @"cellId";
 
 @interface WYListViewController ()<UITableViewDataSource,UITableViewDelegate>
 
+//  记录表格
 @property(nonatomic,strong)UITableView * tableView;
+
+//  记录模型数据
+@property(nonatomic,strong)NSMutableArray * mutableData;
 @end
 
 @implementation WYListViewController
@@ -22,8 +26,24 @@ NSString * cellId = @"cellId";
     [super viewDidLoad];
 
     [self setUIup];
+    [self loadData];
 }
 
+- (void)loadData
+{
+    [[WYNetworkManager sharedManager]newsListWithChannel:@"T1348649079062" start:0 completion:^(NSArray *array, NSError *error) {
+        
+        NSLog(@"%@",array);
+        
+        
+        NSArray * array1 = [NSArray yy_modelArrayWithClass:[NSArray class] json:array];
+        
+        _mutableData = [NSMutableArray arrayWithArray:array1];
+        
+        [_tableView reloadData];
+        
+    }];
+}
 #pragma mark -------- 搭建界面
 - (void)setUIup
 {

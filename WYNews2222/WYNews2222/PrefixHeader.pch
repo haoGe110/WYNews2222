@@ -10,5 +10,5 @@
 #import <Masonry.h>
 #import <NSObject+YYModel.h>
 #import "CZAdditions.h"
-
+#import "WYNetworkManager.h"
 #endif
