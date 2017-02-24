@@ -7,6 +7,7 @@
 //
 
 #import "WYListViewController.h"
+#import "WYNewslistLTEM.h"
 
 NSString * cellId = @"cellId";
 
@@ -17,7 +18,7 @@ NSString * cellId = @"cellId";
 @property(nonatomic,strong)UITableView * tableView;
 
 //  记录模型数据
-@property(nonatomic,strong)NSMutableArray * mutableData;
+@property(nonatomic,strong)NSMutableArray<WYNewslistLTEM *> * mutableData;
 @end
 
 @implementation WYListViewController
@@ -35,11 +36,13 @@ NSString * cellId = @"cellId";
         
         NSLog(@"%@",array);
         
+        // yy_model字典转模型
+        NSArray * array1 = [NSArray yy_modelArrayWithClass:[WYNewslistLTEM class] json:array];
         
-        NSArray * array1 = [NSArray yy_modelArrayWithClass:[NSArray class] json:array];
-        
+        // 将模型添加到数组
         _mutableData = [NSMutableArray arrayWithArray:array1];
         
+        // 刷新表格
         [_tableView reloadData];
         
     }];
@@ -77,7 +80,8 @@ NSString * cellId = @"cellId";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
-    cell.textLabel.text = @(indexPath.row).description;
+    
+    cell.textLabel.text = _mutableData[indexPath.row].title;
     return cell;
 }
 

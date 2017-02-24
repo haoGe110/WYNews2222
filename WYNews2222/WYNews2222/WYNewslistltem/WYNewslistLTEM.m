@@ -10,4 +10,8 @@
 
 @implementation WYNewslistLTEM
 
+- (NSString *)description
+{
+    return  [self yy_modelDescription];
+}
 @end
