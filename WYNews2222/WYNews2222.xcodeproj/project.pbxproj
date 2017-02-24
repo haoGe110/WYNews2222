@@ -107,7 +107,7 @@
 		0434D1C91E60241A00E4576B /* WYNews2222 */ = {
 			isa = PBXGroup;
 			children = (
-				0434D1EA1E6033A800E4576B /* Tools */,
+				0434D1EB1E6033A800E4576B /* Tools */,
 				0434D1E11E602FCC00E4576B /* Class */,
 				0434D1E21E602FCC00E4576B /* Main */,
 				0434D1CD1E60241A00E4576B /* AppDelegate.h */,
@@ -147,21 +147,14 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		0434D1EA1E6033A800E4576B /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				0434D1EB1E6033A800E4576B /* Tools */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
 		0434D1EB1E6033A800E4576B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
 				0434D1EC1E6033A800E4576B /* Additions */,
 				0434D2061E6033A800E4576B /* Network */,
 			);
-			path = Tools;
+			name = Tools;
+			path = Tools/Tools;
 			sourceTree = "<group>";
 		};
 		0434D1EC1E6033A800E4576B /* Additions */ = {
