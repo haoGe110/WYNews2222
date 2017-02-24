@@ -27,6 +27,7 @@
 		0434D2141E6033A800E4576B /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D2051E6033A800E4576B /* UIViewController+CZAddition.m */; };
 		0434D2151E6033A800E4576B /* CZNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D2081E6033A800E4576B /* CZNetworkManager.m */; };
 		0434D2191E6052C700E4576B /* WYListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D2181E6052C700E4576B /* WYListViewController.m */; };
+		0434D21D1E605B9300E4576B /* WYNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D21C1E605B9300E4576B /* WYNetworkManager.m */; };
 		9A39C30E265F30B1A6233DA8 /* libPods-WYNews2222.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD98639E878ABD44E357FE8 /* libPods-WYNews2222.a */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,8 @@
 		0434D2161E60380A00E4576B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0434D2171E6052C700E4576B /* WYListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYListViewController.h; sourceTree = "<group>"; };
 		0434D2181E6052C700E4576B /* WYListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYListViewController.m; sourceTree = "<group>"; };
+		0434D21B1E605B9300E4576B /* WYNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNetworkManager.h; sourceTree = "<group>"; };
+		0434D21C1E605B9300E4576B /* WYNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNetworkManager.m; sourceTree = "<group>"; };
 		69570B9AA7F9AB9AD7D783EB /* Pods-WYNews2222.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYNews2222.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WYNews2222/Pods-WYNews2222.debug.xcconfig"; sourceTree = "<group>"; };
 		72EE7F774CA5A4EFBE6E6113 /* Pods-WYNews2222.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYNews2222.release.xcconfig"; path = "Pods/Target Support Files/Pods-WYNews2222/Pods-WYNews2222.release.xcconfig"; sourceTree = "<group>"; };
 		CFD98639E878ABD44E357FE8 /* libPods-WYNews2222.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WYNews2222.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +160,7 @@
 			children = (
 				0434D1EC1E6033A800E4576B /* Additions */,
 				0434D2061E6033A800E4576B /* Network */,
+				0434D21A1E605B1E00E4576B /* Network1 */,
 			);
 			name = Tools;
 			path = Tools/Tools;
@@ -201,6 +205,15 @@
 				0434D2081E6033A800E4576B /* CZNetworkManager.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		0434D21A1E605B1E00E4576B /* Network1 */ = {
+			isa = PBXGroup;
+			children = (
+				0434D21B1E605B9300E4576B /* WYNetworkManager.h */,
+				0434D21C1E605B9300E4576B /* WYNetworkManager.m */,
+			);
+			path = Network1;
 			sourceTree = "<group>";
 		};
 		09D36612BD7ACA4DF0F55F72 /* Frameworks */ = {
@@ -358,6 +371,7 @@
 				0434D20A1E6033A800E4576B /* NSAttributedString+CZAdditon.m in Sources */,
 				0434D2101E6033A800E4576B /* UIColor+CZAddition.m in Sources */,
 				0434D1E91E60308B00E4576B /* WYHomeViewController.m in Sources */,
+				0434D21D1E605B9300E4576B /* WYNetworkManager.m in Sources */,
 				0434D1CF1E60241A00E4576B /* AppDelegate.m in Sources */,
 				0434D1CC1E60241A00E4576B /* main.m in Sources */,
 			);
