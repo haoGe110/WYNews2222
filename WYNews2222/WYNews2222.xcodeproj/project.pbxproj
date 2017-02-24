@@ -13,6 +13,19 @@
 		0434D1DA1E60241A00E4576B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0434D1D81E60241A00E4576B /* LaunchScreen.storyboard */; };
 		0434D1E61E60306600E4576B /* WYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D1E51E60306600E4576B /* WYMainViewController.m */; };
 		0434D1E91E60308B00E4576B /* WYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D1E81E60308B00E4576B /* WYHomeViewController.m */; };
+		0434D2091E6033A800E4576B /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D1EF1E6033A800E4576B /* NSArray+Log.m */; };
+		0434D20A1E6033A800E4576B /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D1F11E6033A800E4576B /* NSAttributedString+CZAdditon.m */; };
+		0434D20B1E6033A800E4576B /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D1F31E6033A800E4576B /* NSObject+CZRuntime.m */; };
+		0434D20C1E6033A800E4576B /* NSString+CZBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D1F51E6033A800E4576B /* NSString+CZBase64.m */; };
+		0434D20D1E6033A800E4576B /* NSString+CZHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D1F71E6033A800E4576B /* NSString+CZHash.m */; };
+		0434D20E1E6033A800E4576B /* NSString+CZPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D1F91E6033A800E4576B /* NSString+CZPath.m */; };
+		0434D20F1E6033A800E4576B /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D1FB1E6033A800E4576B /* UIButton+CZAddition.m */; };
+		0434D2101E6033A800E4576B /* UIColor+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D1FD1E6033A800E4576B /* UIColor+CZAddition.m */; };
+		0434D2111E6033A800E4576B /* UILabel+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D1FF1E6033A800E4576B /* UILabel+CZAddition.m */; };
+		0434D2121E6033A800E4576B /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D2011E6033A800E4576B /* UIScreen+CZAddition.m */; };
+		0434D2131E6033A800E4576B /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D2031E6033A800E4576B /* UIView+CZAddition.m */; };
+		0434D2141E6033A800E4576B /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D2051E6033A800E4576B /* UIViewController+CZAddition.m */; };
+		0434D2151E6033A800E4576B /* CZNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434D2081E6033A800E4576B /* CZNetworkManager.m */; };
 		9A39C30E265F30B1A6233DA8 /* libPods-WYNews2222.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD98639E878ABD44E357FE8 /* libPods-WYNews2222.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +41,34 @@
 		0434D1E51E60306600E4576B /* WYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYMainViewController.m; sourceTree = "<group>"; };
 		0434D1E71E60308B00E4576B /* WYHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYHomeViewController.h; sourceTree = "<group>"; };
 		0434D1E81E60308B00E4576B /* WYHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYHomeViewController.m; sourceTree = "<group>"; };
+		0434D1ED1E6033A800E4576B /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
+		0434D1EE1E6033A800E4576B /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		0434D1EF1E6033A800E4576B /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		0434D1F01E6033A800E4576B /* NSAttributedString+CZAdditon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CZAdditon.h"; sourceTree = "<group>"; };
+		0434D1F11E6033A800E4576B /* NSAttributedString+CZAdditon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CZAdditon.m"; sourceTree = "<group>"; };
+		0434D1F21E6033A800E4576B /* NSObject+CZRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZRuntime.h"; sourceTree = "<group>"; };
+		0434D1F31E6033A800E4576B /* NSObject+CZRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZRuntime.m"; sourceTree = "<group>"; };
+		0434D1F41E6033A800E4576B /* NSString+CZBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZBase64.h"; sourceTree = "<group>"; };
+		0434D1F51E6033A800E4576B /* NSString+CZBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZBase64.m"; sourceTree = "<group>"; };
+		0434D1F61E6033A800E4576B /* NSString+CZHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZHash.h"; sourceTree = "<group>"; };
+		0434D1F71E6033A800E4576B /* NSString+CZHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZHash.m"; sourceTree = "<group>"; };
+		0434D1F81E6033A800E4576B /* NSString+CZPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
+		0434D1F91E6033A800E4576B /* NSString+CZPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZPath.m"; sourceTree = "<group>"; };
+		0434D1FA1E6033A800E4576B /* UIButton+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CZAddition.h"; sourceTree = "<group>"; };
+		0434D1FB1E6033A800E4576B /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
+		0434D1FC1E6033A800E4576B /* UIColor+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CZAddition.h"; sourceTree = "<group>"; };
+		0434D1FD1E6033A800E4576B /* UIColor+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZAddition.m"; sourceTree = "<group>"; };
+		0434D1FE1E6033A800E4576B /* UILabel+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CZAddition.h"; sourceTree = "<group>"; };
+		0434D1FF1E6033A800E4576B /* UILabel+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CZAddition.m"; sourceTree = "<group>"; };
+		0434D2001E6033A800E4576B /* UIScreen+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CZAddition.h"; sourceTree = "<group>"; };
+		0434D2011E6033A800E4576B /* UIScreen+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CZAddition.m"; sourceTree = "<group>"; };
+		0434D2021E6033A800E4576B /* UIView+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CZAddition.h"; sourceTree = "<group>"; };
+		0434D2031E6033A800E4576B /* UIView+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
+		0434D2041E6033A800E4576B /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
+		0434D2051E6033A800E4576B /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
+		0434D2071E6033A800E4576B /* CZNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZNetworkManager.h; sourceTree = "<group>"; };
+		0434D2081E6033A800E4576B /* CZNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZNetworkManager.m; sourceTree = "<group>"; };
+		0434D2161E60380A00E4576B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		69570B9AA7F9AB9AD7D783EB /* Pods-WYNews2222.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYNews2222.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WYNews2222/Pods-WYNews2222.debug.xcconfig"; sourceTree = "<group>"; };
 		72EE7F774CA5A4EFBE6E6113 /* Pods-WYNews2222.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYNews2222.release.xcconfig"; path = "Pods/Target Support Files/Pods-WYNews2222/Pods-WYNews2222.release.xcconfig"; sourceTree = "<group>"; };
 		CFD98639E878ABD44E357FE8 /* libPods-WYNews2222.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WYNews2222.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,14 +107,11 @@
 		0434D1C91E60241A00E4576B /* WYNews2222 */ = {
 			isa = PBXGroup;
 			children = (
+				0434D1EA1E6033A800E4576B /* Tools */,
 				0434D1E11E602FCC00E4576B /* Class */,
 				0434D1E21E602FCC00E4576B /* Main */,
-				0434D1E31E602FCC00E4576B /* Tools */,
 				0434D1CD1E60241A00E4576B /* AppDelegate.h */,
 				0434D1CE1E60241A00E4576B /* AppDelegate.m */,
-				0434D1D61E60241A00E4576B /* Assets.xcassets */,
-				0434D1D81E60241A00E4576B /* LaunchScreen.storyboard */,
-				0434D1DB1E60241A00E4576B /* Info.plist */,
 				0434D1CA1E60241A00E4576B /* Supporting Files */,
 			);
 			path = WYNews2222;
@@ -82,7 +120,11 @@
 		0434D1CA1E60241A00E4576B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0434D1D61E60241A00E4576B /* Assets.xcassets */,
+				0434D1D81E60241A00E4576B /* LaunchScreen.storyboard */,
+				0434D1DB1E60241A00E4576B /* Info.plist */,
 				0434D1CB1E60241A00E4576B /* main.m */,
+				0434D2161E60380A00E4576B /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -105,11 +147,62 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		0434D1E31E602FCC00E4576B /* Tools */ = {
+		0434D1EA1E6033A800E4576B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				0434D1EB1E6033A800E4576B /* Tools */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		0434D1EB1E6033A800E4576B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0434D1EC1E6033A800E4576B /* Additions */,
+				0434D2061E6033A800E4576B /* Network */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0434D1EC1E6033A800E4576B /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				0434D1ED1E6033A800E4576B /* CZAdditions.h */,
+				0434D1EE1E6033A800E4576B /* NSArray+Log.h */,
+				0434D1EF1E6033A800E4576B /* NSArray+Log.m */,
+				0434D1F01E6033A800E4576B /* NSAttributedString+CZAdditon.h */,
+				0434D1F11E6033A800E4576B /* NSAttributedString+CZAdditon.m */,
+				0434D1F21E6033A800E4576B /* NSObject+CZRuntime.h */,
+				0434D1F31E6033A800E4576B /* NSObject+CZRuntime.m */,
+				0434D1F41E6033A800E4576B /* NSString+CZBase64.h */,
+				0434D1F51E6033A800E4576B /* NSString+CZBase64.m */,
+				0434D1F61E6033A800E4576B /* NSString+CZHash.h */,
+				0434D1F71E6033A800E4576B /* NSString+CZHash.m */,
+				0434D1F81E6033A800E4576B /* NSString+CZPath.h */,
+				0434D1F91E6033A800E4576B /* NSString+CZPath.m */,
+				0434D1FA1E6033A800E4576B /* UIButton+CZAddition.h */,
+				0434D1FB1E6033A800E4576B /* UIButton+CZAddition.m */,
+				0434D1FC1E6033A800E4576B /* UIColor+CZAddition.h */,
+				0434D1FD1E6033A800E4576B /* UIColor+CZAddition.m */,
+				0434D1FE1E6033A800E4576B /* UILabel+CZAddition.h */,
+				0434D1FF1E6033A800E4576B /* UILabel+CZAddition.m */,
+				0434D2001E6033A800E4576B /* UIScreen+CZAddition.h */,
+				0434D2011E6033A800E4576B /* UIScreen+CZAddition.m */,
+				0434D2021E6033A800E4576B /* UIView+CZAddition.h */,
+				0434D2031E6033A800E4576B /* UIView+CZAddition.m */,
+				0434D2041E6033A800E4576B /* UIViewController+CZAddition.h */,
+				0434D2051E6033A800E4576B /* UIViewController+CZAddition.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		0434D2061E6033A800E4576B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0434D2071E6033A800E4576B /* CZNetworkManager.h */,
+				0434D2081E6033A800E4576B /* CZNetworkManager.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		09D36612BD7ACA4DF0F55F72 /* Frameworks */ = {
@@ -251,7 +344,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0434D2151E6033A800E4576B /* CZNetworkManager.m in Sources */,
+				0434D2091E6033A800E4576B /* NSArray+Log.m in Sources */,
+				0434D20E1E6033A800E4576B /* NSString+CZPath.m in Sources */,
+				0434D20D1E6033A800E4576B /* NSString+CZHash.m in Sources */,
 				0434D1E61E60306600E4576B /* WYMainViewController.m in Sources */,
+				0434D2121E6033A800E4576B /* UIScreen+CZAddition.m in Sources */,
+				0434D2111E6033A800E4576B /* UILabel+CZAddition.m in Sources */,
+				0434D20F1E6033A800E4576B /* UIButton+CZAddition.m in Sources */,
+				0434D20B1E6033A800E4576B /* NSObject+CZRuntime.m in Sources */,
+				0434D20C1E6033A800E4576B /* NSString+CZBase64.m in Sources */,
+				0434D2141E6033A800E4576B /* UIViewController+CZAddition.m in Sources */,
+				0434D2131E6033A800E4576B /* UIView+CZAddition.m in Sources */,
+				0434D20A1E6033A800E4576B /* NSAttributedString+CZAdditon.m in Sources */,
+				0434D2101E6033A800E4576B /* UIColor+CZAddition.m in Sources */,
 				0434D1E91E60308B00E4576B /* WYHomeViewController.m in Sources */,
 				0434D1CF1E60241A00E4576B /* AppDelegate.m in Sources */,
 				0434D1CC1E60241A00E4576B /* main.m in Sources */,
@@ -357,6 +463,7 @@
 			baseConfigurationReference = 69570B9AA7F9AB9AD7D783EB /* Pods-WYNews2222.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = WYNews2222/PrefixHeader.pch;
 				INFOPLIST_FILE = WYNews2222/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = e.WYNews2222;
@@ -369,6 +476,7 @@
 			baseConfigurationReference = 72EE7F774CA5A4EFBE6E6113 /* Pods-WYNews2222.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = WYNews2222/PrefixHeader.pch;
 				INFOPLIST_FILE = WYNews2222/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = e.WYNews2222;
