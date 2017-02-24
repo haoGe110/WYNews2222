@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WYHomeViewController.h
 //  WYNews2222
 //
 //  Created by mac on 17/2/24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WYHomeViewController : UIViewController
 
 @end
-
