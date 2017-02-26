@@ -10,9 +10,6 @@
 #import "WYNewslistLTEM.h"
 #import "WYNewsTableCell.h"
 
-#import <UIImageView+WebCache.h>
-
-
 NSString * NormalCellId = @"NormalCell";
 NSString * ExtraImagesCellId = @"ExtraImagesCellId";
 NSString * bigImagecellId = @"bigImagecellId";
@@ -113,21 +110,15 @@ NSString * headImageCellId = @"headImageCellId";
     cell.replyLabel.text = @(model.replyCount).description;
     
     // 设置图片
-    NSURL *imageURL = [NSURL URLWithString:model.imgsrc];
     
-    [cell.iconImage sd_setImageWithURL:imageURL];
+    [cell.iconImage sdwebimageWithURLstring:model.imgsrc];
     
     // 设置多图 － 如果没有不会进入循环
     NSInteger idx = 0;
     for (NSDictionary *dict in model.imgextra) {
         
-        // 1. 获取url字符串
-        NSURL *url = [NSURL URLWithString:dict[@"imgsrc"]];
+        [cell.extraIcon[idx++] sdwebimageWithURLstring:dict[@"imgsrc"]];
         
-        // 2. 设置图像
-        UIImageView *iv = cell.extraIcon[idx++];
-        
-        [iv sd_setImageWithURL:url];
     }
 
     return cell;

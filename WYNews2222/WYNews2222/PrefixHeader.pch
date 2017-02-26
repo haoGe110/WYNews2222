@@ -11,4 +11,5 @@
 #import <NSObject+YYModel.h>
 #import "CZAdditions.h"
 #import "WYNetworkManager.h"
+#import "UIImageView+WYweb_image.h"
 #endif
