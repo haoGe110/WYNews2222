@@ -8,18 +8,78 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WYNewsTableCell">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <rect key="frame" x="0.0" y="0.0" width="376" height="130"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zn2-1U-jjS">
-                    <rect key="frame" x="164" y="60" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMT-5r-UGH">
+                    <rect key="frame" x="8" y="8" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugL-E3-G3a">
+                    <rect key="frame" x="8" y="107" width="38" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhH-DP-h5h">
+                    <rect key="frame" x="330" y="107" width="38" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c4x-Ud-QCL">
+                    <rect key="frame" x="8" y="37" width="97" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="Cf3-Lp-dBD"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="moh-Z9-mOO">
+                    <rect key="frame" x="271" y="37" width="97" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="gyu-8y-dfX"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BUJ-qd-gbl">
+                    <rect key="frame" x="140" y="37" width="96" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="Tjq-6n-2a0"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PhH-DP-h5h" secondAttribute="trailing" constant="8" id="05Q-i7-Pjo"/>
+                <constraint firstItem="moh-Z9-mOO" firstAttribute="height" secondItem="BUJ-qd-gbl" secondAttribute="height" id="1K8-Ut-3KA"/>
+                <constraint firstItem="BUJ-qd-gbl" firstAttribute="width" secondItem="c4x-Ud-QCL" secondAttribute="width" id="1Vm-Ub-9fd"/>
+                <constraint firstAttribute="trailing" secondItem="moh-Z9-mOO" secondAttribute="trailing" constant="8" id="4fJ-6P-gFB"/>
+                <constraint firstItem="moh-Z9-mOO" firstAttribute="leading" secondItem="BUJ-qd-gbl" secondAttribute="trailing" constant="35" id="9Tb-vd-fqk"/>
+                <constraint firstAttribute="bottom" secondItem="PhH-DP-h5h" secondAttribute="bottom" constant="5" id="GPS-H8-j6l"/>
+                <constraint firstItem="moh-Z9-mOO" firstAttribute="top" secondItem="BUJ-qd-gbl" secondAttribute="top" id="Gbs-f5-Mim"/>
+                <constraint firstItem="BUJ-qd-gbl" firstAttribute="top" secondItem="c4x-Ud-QCL" secondAttribute="top" id="Iwc-F9-8dS"/>
+                <constraint firstItem="BUJ-qd-gbl" firstAttribute="height" secondItem="c4x-Ud-QCL" secondAttribute="height" id="PE3-Cy-kgZ"/>
+                <constraint firstItem="ugL-E3-G3a" firstAttribute="leading" secondItem="c4x-Ud-QCL" secondAttribute="leading" id="Q4N-7O-HDh"/>
+                <constraint firstItem="ZMT-5r-UGH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Zqc-ny-IaJ"/>
+                <constraint firstItem="ugL-E3-G3a" firstAttribute="bottom" secondItem="PhH-DP-h5h" secondAttribute="bottom" id="aFk-RW-SCT"/>
+                <constraint firstItem="moh-Z9-mOO" firstAttribute="width" secondItem="BUJ-qd-gbl" secondAttribute="width" id="fLb-wD-OOe"/>
+                <constraint firstItem="ZMT-5r-UGH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="fgM-Sr-ayE"/>
+                <constraint firstItem="PhH-DP-h5h" firstAttribute="top" secondItem="moh-Z9-mOO" secondAttribute="bottom" constant="6" id="ghv-Zk-y6Y"/>
+                <constraint firstItem="BUJ-qd-gbl" firstAttribute="leading" secondItem="c4x-Ud-QCL" secondAttribute="trailing" constant="35" id="kQh-zC-pWL"/>
+                <constraint firstItem="c4x-Ud-QCL" firstAttribute="leading" secondItem="ZMT-5r-UGH" secondAttribute="leading" id="qB7-i9-D2Y"/>
+                <constraint firstItem="c4x-Ud-QCL" firstAttribute="top" secondItem="ZMT-5r-UGH" secondAttribute="bottom" constant="8" id="tVZ-Dw-Wng"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="286" y="144"/>
+            <connections>
+                <outlet property="datasoureLabel" destination="ugL-E3-G3a" id="Nbc-2f-Y86"/>
+                <outlet property="iconImage" destination="c4x-Ud-QCL" id="P3n-1c-56N"/>
+                <outlet property="replyLabel" destination="PhH-DP-h5h" id="hgK-IS-vh5"/>
+                <outlet property="titleLabel" destination="ZMT-5r-UGH" id="MHv-ea-IPp"/>
+                <outletCollection property="extraIcon" destination="BUJ-qd-gbl" id="aKD-V9-i2a"/>
+                <outletCollection property="extraIcon" destination="moh-Z9-mOO" id="zlV-w6-lvx"/>
+            </connections>
+            <point key="canvasLocation" x="706" y="148"/>
         </view>
     </objects>
 </document>

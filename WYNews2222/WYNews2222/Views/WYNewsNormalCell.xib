@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,16 +12,53 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kev-Mp-4d9">
-                    <rect key="frame" x="144" y="64" width="42" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kev-Mp-4d9">
+                    <rect key="frame" x="140" y="18" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1os-eM-k7f">
+                    <rect key="frame" x="14" y="18" width="112" height="113"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="113" id="rU3-Qz-ZaD"/>
+                        <constraint firstAttribute="width" constant="112" id="zhe-Q4-0UE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiI-1D-fnr">
+                    <rect key="frame" x="140" y="110" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOG-Tg-INl">
+                    <rect key="frame" x="334" y="101" width="33" height="39"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1os-eM-k7f" firstAttribute="leading" secondItem="hUU-VZ-j8K" secondAttribute="leading" constant="14" id="Cga-Ls-SvN"/>
+                <constraint firstItem="kev-Mp-4d9" firstAttribute="leading" secondItem="1os-eM-k7f" secondAttribute="trailing" constant="14" id="KoC-a9-9X1"/>
+                <constraint firstItem="tOG-Tg-INl" firstAttribute="centerY" secondItem="FiI-1D-fnr" secondAttribute="centerY" id="N3s-vP-Phe"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kev-Mp-4d9" secondAttribute="trailing" constant="14" id="NZd-rJ-hfB"/>
+                <constraint firstItem="1os-eM-k7f" firstAttribute="top" secondItem="hUU-VZ-j8K" secondAttribute="top" constant="18" id="Vjk-qc-eX2"/>
+                <constraint firstItem="FiI-1D-fnr" firstAttribute="leading" secondItem="1os-eM-k7f" secondAttribute="trailing" constant="14" id="Vpc-mY-K96"/>
+                <constraint firstItem="kev-Mp-4d9" firstAttribute="top" secondItem="1os-eM-k7f" secondAttribute="top" id="ec4-DF-2L8"/>
+                <constraint firstItem="FiI-1D-fnr" firstAttribute="bottom" secondItem="1os-eM-k7f" secondAttribute="bottom" id="fLl-VD-Q60"/>
+                <constraint firstAttribute="trailingMargin" secondItem="tOG-Tg-INl" secondAttribute="trailing" id="gdZ-R9-Dyk"/>
+                <constraint firstAttribute="bottom" secondItem="tOG-Tg-INl" secondAttribute="bottom" constant="10" id="wv8-zS-814"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="datasoureLabel" destination="FiI-1D-fnr" id="hI8-2h-jNl"/>
+                <outlet property="iconImage" destination="1os-eM-k7f" id="vog-h3-NJ2"/>
+                <outlet property="replyLabel" destination="tOG-Tg-INl" id="jiP-XY-DNA"/>
+                <outlet property="titleLabel" destination="kev-Mp-4d9" id="FAl-4j-bPA"/>
+            </connections>
             <point key="canvasLocation" x="206.5" y="-66"/>
         </view>
     </objects>

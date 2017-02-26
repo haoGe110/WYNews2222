@@ -34,5 +34,17 @@
  * 多图新闻的其余图片
  */
 @property (nonatomic, strong) NSArray *imgextra;
+/**
+ * 是否大图标记
+ */
+@property (nonatomic, assign) BOOL imgType;
+/**
+ * 是否是顶部 Cell
+ */
+@property (nonatomic, assign) BOOL hasHead;
 
+/**
+ * 文档代号 http://c.m.163.com/nc/article/[docid]/full.html
+ */
+@property (nonatomic, copy) NSString *docid;
 @end

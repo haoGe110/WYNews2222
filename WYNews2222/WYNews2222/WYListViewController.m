@@ -10,8 +10,13 @@
 #import "WYNewslistLTEM.h"
 #import "WYNewsTableCell.h"
 
+#import <UIImageView+WebCache.h>
+
+
 NSString * NormalCellId = @"NormalCell";
 NSString * ExtraImagesCellId = @"ExtraImagesCellId";
+NSString * bigImagecellId = @"bigImagecellId";
+NSString * headImageCellId = @"headImageCellId";
 
 @interface WYListViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -60,9 +65,15 @@ NSString * ExtraImagesCellId = @"ExtraImagesCellId";
         make.edges.equalTo(self.view);
     }];
     
+    // 设置自动行高
+    tv.estimatedRowHeight = 100;
+    tv.rowHeight = UITableViewAutomaticDimension;
+    
     // 3. 注册cellId
-   // [tv registerNib:[UINib nibWithNibName:@"WYNewsNormalCell" bundle:nil] forCellReuseIdentifier:NormalCellId];
+    [tv registerNib:[UINib nibWithNibName:@"WYNewsNormalCell" bundle:nil] forCellReuseIdentifier:NormalCellId];
     [tv registerNib:[UINib nibWithNibName:@"WYNewsExtraImagesCell" bundle:nil] forCellReuseIdentifier:ExtraImagesCellId];
+    [tv registerNib:[UINib nibWithNibName:@"bigImage" bundle:nil] forCellReuseIdentifier:bigImagecellId];
+    [tv registerNib:[UINib nibWithNibName:@"headImageCell" bundle:nil] forCellReuseIdentifier:headImageCellId];
     
     // 4. 设置代理和数据源
     tv.delegate = self;
@@ -81,9 +92,44 @@ NSString * ExtraImagesCellId = @"ExtraImagesCellId";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:ExtraImagesCellId forIndexPath:indexPath];
+    WYNewslistLTEM *model = _mutableData[indexPath.row];
+
+    NSString * cellId;
+    if (model.hasHead) {
+        cellId = headImageCellId;
+    } else if (model.imgType) {
+        cellId = bigImagecellId;
+    } else if (model.imgextra.count > 0) {
+        cellId = ExtraImagesCellId;
+    } else {
+        cellId = NormalCellId;
+    }
+
+    WYNewsTableCell * cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
     
-    cell.textLabel.text = _mutableData[indexPath.row].title;
+    // 2. 设置数据
+    cell.titleLabel.text = model.title;
+    cell.datasoureLabel.text = model.source;
+    cell.replyLabel.text = @(model.replyCount).description;
+    
+    // 设置图片
+    NSURL *imageURL = [NSURL URLWithString:model.imgsrc];
+    
+    [cell.iconImage sd_setImageWithURL:imageURL];
+    
+    // 设置多图 － 如果没有不会进入循环
+    NSInteger idx = 0;
+    for (NSDictionary *dict in model.imgextra) {
+        
+        // 1. 获取url字符串
+        NSURL *url = [NSURL URLWithString:dict[@"imgsrc"]];
+        
+        // 2. 设置图像
+        UIImageView *iv = cell.extraIcon[idx++];
+        
+        [iv sd_setImageWithURL:url];
+    }
+
     return cell;
 }
 
